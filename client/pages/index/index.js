@@ -23,14 +23,14 @@ Page({
             success(result) {
                 console.log(result)
                 if (result) {
-                    console.log(1)
+                    console.log(2)
                     util.showSuccess('登录成功')
                     that.setData({
                         userInfo: result,
                         logged: true
                     })
                 } else {
-                    console.log(2)
+                    console.log(3)
                     // 如果不是首次登录，不会返回用户信息，请求用户信息接口获取
                     qcloud.request({
                         url: config.service.requestUrl,
